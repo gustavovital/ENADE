@@ -154,3 +154,26 @@ wordcloud(words = names(term_frequency_2018),
           use.r.layout = FALSE,
           scale=c(2.5,.8))
 
+
+
+
+term_frequency_2012 <- sort(enade_matrix[,1], decreasing = TRUE)
+term_frequency_2015 <- sort(enade_matrix[,2], decreasing = TRUE)
+term_frequency_2018 <- sort(enade_matrix[,3], decreasing = TRUE)
+
+head(term_frequency_2012, n = 100)
+head(term_frequency_2015, n = 100)
+head(term_frequency_2018, n = 100)
+
+
+
+
+
+
+
+
+
+
+
+
+

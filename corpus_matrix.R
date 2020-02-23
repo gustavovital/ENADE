@@ -9,6 +9,7 @@ library(pdftools)
 library(tidyverse)
 library(qdap)
 library(tm)
+# library(quanteda)
 
 # Base de dados ====
 
@@ -64,6 +65,7 @@ term_frequency <- rowSums(enade_matrix)
 term_frequency <- sort(term_frequency, decreasing = TRUE)
 
 saveRDS(corpus_clean, 'corpus_clean.rds')
+saveRDS(corpus, 'corpus.rds')
 saveRDS(enade_tdm, 'enade_tdm,rds')
 saveRDS(enade_matrix, 'enade_matrix.rds')
 
